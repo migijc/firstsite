@@ -1,24 +1,49 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+
+}
+
+html{
+    width: 100vw;
+}
 .topline {
+
     display: flex;
     justify-content: space-around;
     gap: 500px;
-    background-color: #bd162c;
+    background-color: #b10404;
     align-items: center;
     padding: 10px;
-    
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    color: rgb(214, 207, 207);
+    box-shadow: 5px 5px 30px black;
+    z-index: 100;
+
+
     
     }
 
 
 
 
- ul {
+ .menu {
      display: flex;
      list-style: none;
      padding: 0;
      margin: 0;
      gap: 26px;
-     font-size: 18px;
+     font-size: 20px;
+     font-weight: 300;
+
      
  }
  
@@ -26,50 +51,55 @@
      max-width: 140px;
      height: 140px;
      border-radius: 15px;
-     border: 2px solid #1f2937;
+     border: 3px solid #262829;
      
      
  }
 
  .topsec {
      display: flex;
-     background-image: linear-gradient(#1f2937,#bd162c, #1f2937);
+     background-color: #222529;
+ 
     justify-content: center;
-    
-     
-     
-     
-     
+    align-items: center;
+    height: 500px;
+    box-shadow: 9px 9px 8px #534f4f;   
+    width: 100vw;     
  }
 
  .maincon {
      display: flex;
-     margin-top: 125px;
      align-items: center;
-     margin-bottom: 125px;
-     gap: 150px;
-    
-     
-    
-     
-     
+     gap: 190px;
+     justify-content: center;
+     color: rgb(214, 207, 207);
  }
 
- .containertop {
-    
-     color: white;
- }
+
 
  .headerlogo {
-     font-size: 24px;
+     
      padding: 0;
      margin: 0;
+     background-image: url(.//img/formula\ headlines.png);
+     background-repeat: none;
+     background-size: cover;
+     height: 200px;
+     width: 200px;
+
  }
 
  .boxone{
+     
      display: flex;
      flex-direction: column;
-     width: 450px;
+     width: 500px;
+     gap: 14px;
+     height: 280px;
+     justify-content: center;
+     
+
+     
  }
 
  .formula {
@@ -83,44 +113,83 @@
  }
 
  .header {
-     font-size: 48px;
+     font-size: 38px;
+     margin: 0;
+     font-family: sofachrome, sans-serif;
+     font-style: normal;
+     font-weight: 300;
+     position: absolute;
+     left: 260px;
+     top: 160px;
  }
 
  .paraone {
-     font-size: 18px;
-     margin-top: -10px;
+     font-size: 20px;
+     margin: 0;
+     position: absolute;
+     width: 65ch;
+     top: 225px ;
+     left: 260px;
+     font-family: fenwick, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(117, 117, 107)
+     
+     
  }
 
  .drivers {
      display: flex;
      justify-content: center;
-     gap: 60px;
+     gap: 170px;
      margin-bottom: 70px;
  }
 
  .set {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
      width: 150px;
     margin-top: 20px;
-     justify-content: center;
+     justify-content: flex-start;
      text-align: center;
-     
+     font-family: fenwick, sans-serif;
+    font-weight: 400;
+    font-style: normal;
  }
  
 .pics {
     display: flex;
     justify-content: center;
-    color: #1f2937;
-    font-weight: 900;
-    font-family: 'Roboto', sans-serif;
+    color: #222529;
+    
+    margin-top: 90px;
+    font-size: 32px;
+    
+    font-family: sofachrome, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
     
 }
 
 .wholequote {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background-color: #e5e7eb;
-    padding: 50px;
+    align-items: center;
+    width: 100%;
+    box-shadow: inset 6px 6px 50px  black;
+    font-family: fenwick, sans-serif;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+   
+
+    
+
+
    
     
     
@@ -129,12 +198,10 @@
 .quote {
     display: flex;
     width: 750px;
-    font-size: 36px;
-    color: #1f2937;
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-    font-style: italic;
+    font-size: 31px;
+    color: #222529;
     
+    font-style: italic;
     
     }
  
@@ -143,19 +210,25 @@
     margin-left: 400px;
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    color: #1f2937;
+    color: #222529;
+ 
 }
 
 .bone {
+    position: absolute;
+    margin-top: 10px;
     display: flex;
     width: 100px;
     justify-content: center;
     padding: 10px;
     border-radius: 10px;
-    background-color: #1f2937;
-    color: white;
+    background-color: transparent;
+    color:  rgb(214, 207, 207);
     font-weight: bold;
+    border: 3px solid;
+    border-image: linear-gradient(45deg, #b10404, silver, #383b41) 1;
+    top: 286px;
+    left: 260px;
 }
 
 .prelastbox  {
@@ -168,7 +241,7 @@
 
 .wholebox {
     display: flex;
-    background-color: #1f2937;
+    background-color: #222529;
     align-items: center;
     padding-left: 90px;
     padding-right: 90px;
@@ -176,27 +249,36 @@
     padding-bottom: 20px;
     gap: 200px;
     border-radius: 10px;
-    color: white;
-    
+    color: rgb(214, 207, 207);
+   
 }
 
 .btwo {
     display: flex;
-    width: 100px;
+    width: 180px;
     justify-content: center;
     padding: 10px;
-    border-radius: 10px;
-    background-color: #1f2937;
-    color: white;
+    border-radius: 90px;
+    border: #b10404;
+    background-color: #b10404;
+    color: rgb(214, 207, 207);
     font-weight: bold;
+   
+   
+    margin-top: 40px;
 }
 
 .footer {
-    background-color: #bd162c;
+    background-color: #222529;
     padding: 25px;
     text-align: center;
-    color: white;
+    color: rgb(214, 207, 207);
     font-weight: 600;
+    width: 100vw;
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 6px;
 }
 
  body {
@@ -205,8 +287,215 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    align-items: center;
     
 }
 
 
+.mainPic{
+    
+    background-image: url(".//img/F1-2022-SILVERSTONE-02-1440x759_preview_rev_1.png");
+    position: relative;
+    width: 700px;
+    height: 400px;
+    background-size:cover;
+    background-repeat: none;
+    border-radius: 4px;
+    top: 140px;
 
+}
+
+.max{
+    background-image: url(".//img/max_preview_rev_1.png");
+    /* height: 200px;
+    width: 270px; */
+    background-repeat: none;
+    background-size:auto;
+    background-size: cover;
+    background-position: center;
+    position: static; 
+}
+/* .setmax{
+    border-image: linear-gradient(45deg, #21468b, white,#ae1c28)1;
+} */
+
+.charles {
+    background-image: url(".//img/leclerc_preview_rev_1.png"); 
+}
+
+/* .setcharles{
+    border-image: linear-gradient(290deg, #c31024, #ffffff)1;
+} */
+
+.checo{
+     background-image: url(".//img/checo_preview_rev_1.png"); 
+}
+
+/* .setcheco{
+} */
+
+.kevin{
+    background-image: url(.//img/newKmag.png);
+}
+/* .setkevin{
+} */
+
+.max,
+.charles,
+.checo,
+.kevin {
+    margin-top: -6px;
+    height: 200px;
+    width: 280px;
+    background-repeat: none;
+    background-size:auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.set{
+    font-weight: bold;
+}
+
+form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222529;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    gap:8px;
+    padding: 12px;
+
+    
+    
+    
+}
+
+input{
+    width: 400px; 
+    border-radius: 20px;
+    appearance: none;
+    padding: 3px;
+    padding-left: 6px;
+    
+}
+
+.formHeader{
+    
+    display: flex;
+    color:white;
+    font-size: 26px;
+    padding: 0;
+    
+    font-family: fenwick-outline, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4px;
+    width: 33vw;
+    justify-content: center;
+    
+    
+}
+
+label{
+    
+    text-align: center;
+    font-weight: bold;
+    appearance: none;
+    color: white;
+    text-align: left;
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+    
+   
+}
+
+select{
+    
+    border-radius: 15px;
+    width: 413px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 3px;
+    padding-left: 6px;
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.menuItems{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+     color: rgb(214, 207, 207);
+   
+    
+  
+}
+
+
+
+.fillOut{
+    color: black;
+    text-align: center;
+    font-size: 12px;
+   
+}
+
+li{
+    list-style: none;
+}
+
+
+.email{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+   
+}
+
+
+.boneClicked{
+    display: flex;
+    width: 120px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color:  rgb(214, 207, 207);
+    font-weight: bold;
+    border: 3px solid;
+    border-image: linear-gradient(130deg, #b10404, silver, #383b41) 1;
+    font-size: 16px;
+    
+    
+}
+
+.picClicked{
+    height: 320px;
+    width: 500px;
+    background-repeat: none;
+    background-size:auto;
+    background-size: cover;
+    background-position: center;
+    position: static; 
+
+}

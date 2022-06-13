@@ -9,15 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/racing-sans" type="text/css"/>
+<link rel="stylesheet" href="https://use.typekit.net/egq8jkw.css">
+<link rel="stylesheet" href="https://use.typekit.net/egq8jkw.css">
+
+
+
+
 </head>
 <body>
-    <div class="containertop">
+    
         <div class="topline">
-    <h2 class="headerlogo">Formula Fantasy</h2>
-    <ul>
-        <li>Home</li>
-        <li>Account</li>
-        <li>News</li>
+    <div class="headerlogo"></div>
+    <ul class="menuItems">
+        <li class="menuItem">Home</li>
+        <li class="menuItem">Account</li>
+        <li class="menuItem">News</li>
+        <li class="menuItem">Hot Take</li>
+        <li class="menuItem">Contact Us</li>
     </ul>
         </div>
        
@@ -28,50 +37,124 @@
     <p class="paraone">The Formula 1 season is underway and there is more action than ever! Join us now to receive lighting fast driver bets. Lets go redbull!</p>
     <button class="bone">Sign up</button>
                     </div>
-    <img class="formula" src="img/formulaone.jpg" alt="pic of a beautiful car">
+                    <div class="mainPic"></div>
             </div>
         </div>
-        </div>
+       
 
         
     <h1 class="pics">Pilots of the Season</h1>
     <div class="drivers">
-    <div class="set">
-    <img class="btm" src="img/max.jpg">
+    <div class="set setmax">
+        <div class="max"></div>
     <p>Max "mad max" Verstappen</p>
                 </div>
-            <div class="set">
-    <img class="btm" src="img/leclerc.jpg">
+            <div class="set setcharles">
+                <div class="charles"></div>
     <p>Charles "the lord" Leclerc</p>
                 </div>
-                <div class="set">
-    <img class="btm" src="img/checo.jpeg">
+                <div class="set setcheco">
+                    <div class="checo"></div>
     <p>Sergio "checo" Perez</p>
                     </div>
-                    <div class="set">
-    <img class="btm" src="img/kevin.jpg">
+                    <div class="set setkevin">
+                        <div class="kevin"></div>
     <p>Kevin "the comeback king" Magnussen </p>
                         </div>
                     </div>
            <div class="wholequote">
-    <p class="quote">From success, you learn absolutely nothing. From failure and setbacks, conclusions can be drawn. That goes for your private life as well as your career.</p>
+    <p class="quote">"From success, you learn absolutely nothing. From failure and setbacks, conclusions can be drawn. That goes for your private life as well as your career."</p>
     <p class="thor">-Niki "The King Rat" Lauda</p>
             </div>
-            <div class="prelastbox">
-                <div class="wholebox">
-                <div class="pretext">    
-    <h4>Call to action! It's Time</h4>
-    <p>Sign up for our products by clicking that button over there</p>
-                    </div>
-    <button class="btwo"> Sign Up</button>
-                    </div>
+            <form >
+                <div class="top">
+                    <h1 class="formHeader">Sign up to our Newsletter!</h1>
                 </div>
+            
+                <div class="email">
+                    <label for="userEmail">Email</label>
+                    <input type="email" name="userEmail" id="userEmail" required>
+                
+                
+                
+                    <label for="team">Favorite Team</label>
+                <select name="favoriteTeam" id="team" required>
+                    <option value="">Redbull</option>
+                    <option value="">Ferrari</option>
+                    <option value="">Mercedes</option>
+                    <option value="">Alpine</option>
+                    <option value="">Haas</option>
+                    <option value="">Mclaren</option>
+                    <option value="">Alpha Tauri</option>
+                    <option value="">Alpha Romeo</option>
+                    <option value="">Aston Martin</option>
+                    <option value="">Williams</option>
+                    </select>
+                </div>
+                    
+                
+                <div>
+                    <button class="btwo">Sign Up!</button>
+                </div>
+               
+            </form>
                 
 
-    <div class="footer">Copyright © The Miguel Project 1996</div>
+    <div class="footer">Landing Page developed by Miguel Gil</div>
 
-
+    
 
     
 </body>
+
+<script>
+    const button1 = document.querySelector(".bone");
+
+    button1.addEventListener('mouseenter', () => {
+        button1.classList.add("boneClicked");
+
+    });
+
+    button1.addEventListener('mouseleave', () => {
+        button1.classList.remove("boneClicked");
+
+    });
+
+    const max= document.querySelector(".max");
+    max.addEventListener("mouseenter", () => {
+        max.classList.add("picClicked")
+    })
+
+    max.addEventListener("mouseleave", () => {
+        max.classList.remove("picClicked")
+    })
+
+    const charles= document.querySelector(".charles");
+    charles.addEventListener("mouseenter", () => {
+        charles.classList.add("picClicked")
+    })
+
+    charles.addEventListener("mouseleave", () => {
+        charles.classList.remove("picClicked")
+    })
+
+    const checo= document.querySelector(".checo");
+    checo.addEventListener("mouseenter", () => {
+        checo.classList.add("picClicked")
+    })
+
+    checo.addEventListener("mouseleave", () => {
+        checo.classList.remove("picClicked")
+    })
+
+    const kevin= document.querySelector(".kevin");
+    kevin.addEventListener("mouseenter", () => {
+        kevin.classList.add("picClicked")
+    })
+
+    kevin.addEventListener("mouseleave", () => {
+        kevin.classList.remove("picClicked")
+    })
+</script>
+
 </html>
